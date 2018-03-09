@@ -1,0 +1,86 @@
+.carousel {
+    position: relative;
+    width: 1280px;
+    margin: 0 auto;
+    height: 650px;
+    overflow: hidden;
+}
+
+.carousel .img-ct {
+    position: absolute;
+    height: 650px;
+    width: 2560px;
+}
+
+.carousel .img-ct:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.carousel .img-ct>li {
+    float: left;
+}
+
+.carousel .img-ct img {
+    width: 1280px;
+    /* width: 100%; */
+    height: 650px;
+}
+
+.carousel .cut-btn {
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 36px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0.6;
+    display: block;
+    cursor: pointer;
+}
+
+.carousel .btn-pre {
+    left: 30px;
+}
+
+.carousel .btn-next {
+    right: 30px;
+}
+
+.carousel .bullet-ct {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.carousel .bullet {
+
+    display: inline-block;
+}
+
+
+
+.carousel .bullet>li {
+    display: inline-block;
+    width: 20px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin: 0 5px;
+}
+
+.carousel .bullet .active {
+    background-color: #666;
+}
+
+
+
